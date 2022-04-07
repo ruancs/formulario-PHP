@@ -18,5 +18,6 @@ if(mysqli_insert_id($conn)){
     $_SESSION['msg'] = " <p>Usuário Cadastrado com sucesso!</p>";
     header("Location: index.php");
 } else{
+    $_SESSION['msg'] = " <p>Usuário não cadastrado!</p>";
     header("Location: index.php");
 }
